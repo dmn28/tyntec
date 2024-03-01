@@ -5,7 +5,7 @@ import com.tyntec.move.IMove;
 public class RockPaperScissorsMove implements IMove {
     private final MoveEnum move;
 
-    public RockPaperScissorsMove(MoveEnum moveEnum){
+    public RockPaperScissorsMove(MoveEnum moveEnum) {
         this.move = moveEnum;
     }
 

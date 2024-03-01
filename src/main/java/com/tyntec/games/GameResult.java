@@ -7,12 +7,12 @@ public class GameResult {
     private int playerB_wins_total;
     private int ties_total;
 
-    public void addRoundResult(RoundResultEnum roundResult){
-        if(roundResult == RoundResultEnum.WIN_PLAYER_A){
+    public void addRoundResult(RoundResultEnum roundResult) {
+        if (roundResult == RoundResultEnum.WIN_PLAYER_A) {
             playerA_wins_total++;
         } else if (roundResult == RoundResultEnum.WIN_PLAYER_B) {
             playerB_wins_total++;
-        }else{
+        } else {
             ties_total++;
         }
     }

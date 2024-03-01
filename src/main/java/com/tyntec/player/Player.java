@@ -7,11 +7,11 @@ public class Player {
 
     private final IPlayStrategy strategy;
 
-    public Player(IPlayStrategy strategy){
+    public Player(IPlayStrategy strategy) {
         this.strategy = strategy;
     }
 
-    public IMove getMove(){
+    public IMove getMove() {
         return strategy.getMove();
     }
 }

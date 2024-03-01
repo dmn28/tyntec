@@ -12,12 +12,12 @@ import org.junit.Test;
 public class RulesTest {
 
     @Test
-    public void rockBeatsScissorsTest(){
+    public void rockBeatsScissorsTest() {
         IMove rock = new RockPaperScissorsMove(MoveEnum.ROCK);
         IMove scissorsMove = new RockPaperScissorsMove(MoveEnum.SCISSORS);
         IRules rules = new RockPaperScissorsRules();
 
-        Assert.assertEquals(RoundResultEnum.WIN_PLAYER_A, rules.getWinner(rock,scissorsMove));
+        Assert.assertEquals(RoundResultEnum.WIN_PLAYER_A, rules.getWinner(rock, scissorsMove));
     }
 
     @Test

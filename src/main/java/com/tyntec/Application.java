@@ -13,12 +13,12 @@ public class Application {
 
     public static final int NUMBER_OF_ROUNDS = 100;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         IRules rules = new RockPaperScissorsRules();
         Round round = new Round(rules);
         Player playerA = new Player(new PaperStrategy());
         Player playerB = new Player(new RandomStrategy());
-        Game game = new Game(playerA,playerB,new GameResult(),round);
+        Game game = new Game(playerA, playerB, new GameResult(), round);
 
         GameResult gameResult = game.play(NUMBER_OF_ROUNDS);
         System.out.println("Player A wins " + gameResult.getPlayerA_wins_total() + " of " + NUMBER_OF_ROUNDS + " games");

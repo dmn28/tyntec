@@ -13,25 +13,19 @@ public class RockPaperScissorsRules implements IRules {
         MoveEnum movePlayerAEnum = ((RockPaperScissorsMove) movePlayerA).getMove();
         MoveEnum movePlayerBEnum = ((RockPaperScissorsMove) movePlayerB).getMove();
 
-        if(movePlayerAEnum == MoveEnum.ROCK && movePlayerBEnum == MoveEnum.SCISSORS){
+        if (movePlayerAEnum == MoveEnum.ROCK && movePlayerBEnum == MoveEnum.SCISSORS) {
             return RoundResultEnum.WIN_PLAYER_A;
-        }
-        else if(movePlayerAEnum == MoveEnum.ROCK && movePlayerBEnum == MoveEnum.PAPER){
+        } else if (movePlayerAEnum == MoveEnum.ROCK && movePlayerBEnum == MoveEnum.PAPER) {
             return RoundResultEnum.WIN_PLAYER_B;
-        }
-        else if(movePlayerAEnum == MoveEnum.SCISSORS && movePlayerBEnum == MoveEnum.PAPER){
+        } else if (movePlayerAEnum == MoveEnum.SCISSORS && movePlayerBEnum == MoveEnum.PAPER) {
             return RoundResultEnum.WIN_PLAYER_A;
-        }
-        else if(movePlayerAEnum == MoveEnum.SCISSORS && movePlayerBEnum == MoveEnum.ROCK){
+        } else if (movePlayerAEnum == MoveEnum.SCISSORS && movePlayerBEnum == MoveEnum.ROCK) {
             return RoundResultEnum.WIN_PLAYER_B;
-        }
-        else if(movePlayerAEnum == MoveEnum.PAPER && movePlayerBEnum == MoveEnum.ROCK){
+        } else if (movePlayerAEnum == MoveEnum.PAPER && movePlayerBEnum == MoveEnum.ROCK) {
             return RoundResultEnum.WIN_PLAYER_A;
-        }
-        else if(movePlayerAEnum == MoveEnum.PAPER && movePlayerBEnum == MoveEnum.SCISSORS){
+        } else if (movePlayerAEnum == MoveEnum.PAPER && movePlayerBEnum == MoveEnum.SCISSORS) {
             return RoundResultEnum.WIN_PLAYER_B;
-        }
-        else{
+        } else {
             return RoundResultEnum.TIE;
         }
     }

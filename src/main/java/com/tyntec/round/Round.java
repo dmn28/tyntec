@@ -5,13 +5,13 @@ import com.tyntec.rules.IRules;
 
 public class Round {
 
-    private IRules rules;
+    private final IRules rules;
 
-    public Round(IRules rules){
+    public Round(IRules rules) {
         this.rules = rules;
     }
 
-    public RoundResultEnum playRound(IMove movePlayerA, IMove movePlayerB){
+    public RoundResultEnum playRound(IMove movePlayerA, IMove movePlayerB) {
         return rules.getWinner(movePlayerA, movePlayerB);
     }
 }
